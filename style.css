@@ -1,0 +1,265 @@
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Bangers';
+ }
+  
+.vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(41, 36, 36, 0.5);
+    transition: all 0.4s;
+    background-color: #000;
+  }
+  
+#sidebarCollapse{
+    visibility: hidden;
+    position: relative;
+    top: -25px;
+  }
+
+.page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+    background-color: #2f4353;
+    background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+  }
+  
+.media-body h4 {
+    color: darkgray;
+  }
+
+.media-body p {
+    color: darkgray;
+  }
+
+.search-bar {
+    background-color: rgb(54, 50, 50);
+    border: none;
+    border-radius: 0;
+  }
+ 
+.search-icon {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    left: -70px;
+  }
+
+.nav-text p{
+    color: gray;
+  }
+
+#sidebar.active {
+    margin-left: -17rem;
+  }
+  
+#content.active {
+    width: 100%;
+    margin: 0;
+  }
+
+.separator {
+    margin: 3rem 0;
+    border-bottom: 1px dashed #fff;
+  }
+  
+.text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  
+#carouselExampleSlidesOnly {
+    position: relative;
+    top: -55px;
+  }
+  
+.hero-text{
+    position: relative;
+    top: -50px;
+  }
+
+footer {
+    position: relative;
+    top: 0px;
+    /* left: -48px;
+    width: 1247px; */
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.song-img:hover .middle {
+    opacity: 1;
+  }
+
+@media (max-width: 768px) {
+    #sidebar {
+      margin-left: -17rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 17rem;
+      width: calc(100% - 17rem);
+    }
+    #sidebarCollapse{
+      visibility: visible;
+    }
+    .search-bar {
+      margin: 0 40px;
+    }
+    #carouselExampleSlidesOnly {
+      margin-top: 30px;
+    }
+    .hero-text{
+      margin-top: 20px;
+    }
+    .hero-text h1 {
+      font-size: 25px;
+    }
+  }
+
+.player {
+    position: relative;
+    width: 265px;
+    height: 60px;
+    top: 102.6px;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    padding: 5px;
+    border-radius: 0 0 3px 3px;
+  }
+
+.btns {
+    position: relative;
+    top: 12px;
+    left: 10px;
+  }
+
+.progress-0 {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff;
+  }
+
+.progress-1 {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff;
+  }
+
+.progress-2 {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff;
+  }
+
+.progress-3 {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff;
+  }
+
+.progress-4 {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff;
+  }
+
+.progress-5 {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff;
+  }
+
+.progress-6 {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff;
+  }
+
+.progress-7 {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff;
+  }
+
+.progress-8 {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff;
+  }
+
+.progress-9 {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff;
+  }
+
+.progress-10 {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff;
+  }
+
+.progress-11 {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff;
+  }
+      
+.icon-play:before {
+    content: url(images/icons8-play-24.png)
+  }
+      
+.icon-stop:before {
+    content: url(images/icons8-pause-24.png)
+  }
+      
+ 

@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Links -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/icons8-music-50.png">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      // Sidebar toggle behavior
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+      });
+    });
+  </script>
+
+
+  <script>
+    $(function () {
+      var aud = $('audio')[0];
+      $('.play-pause-0').on('click', function () {
+        if (aud.paused) {
+          aud.play();
+          $('.play-pause-0').removeClass('icon-play');
+          $('.play-pause-0').addClass('icon-stop');
+        }
+
+        else {
+          aud.pause();
+          $('.play-pause-0').removeClass('icon-stop');
+          $('.play-pause-0').addClass('icon-play');
+        }
+      })
+      aud.ontimeupdate = function () {
+        $('.progress-0').css('width', aud.currentTime / aud.duration * 100 + '%')
+      }
+    })
+    
+
+      </script>
+
+  <script>
+    $(function () {
+      var aud = $('audio')[1];
+      $('.play-pause-1').on('click', function () {
+        if (aud.paused) {
+          aud.play();
+          $('.play-pause-1').removeClass('icon-play');
+          $('.play-pause-1').addClass('icon-stop');
+        }
+        else {
+          aud.pause();
+          $('.play-pause-1').removeClass('icon-stop');
+          $('.play-pause-1').addClass('icon-play');
+        }
+
+      })
+      aud.ontimeupdate = function () {
+        $('.progress-1').css('width', aud.currentTime / aud.duration * 100 + '%')
+      }
+    })
+  </script>
+
+  <script>
+    $(function () {
+      var aud = $('audio')[2];
+      $('.play-pause-2').on('click', function () {
+        if (aud.paused) {
+          aud.play();
+          $('.play-pause-2').removeClass('icon-play');
+          $('.play-pause-2').addClass('icon-stop');
+        }
+        else {
+          aud.pause();
+          $('.play-pause-2').removeClass('icon-stop');
+          $('.play-pause-2').addClass('icon-play');
+        }
+
+      })
+      aud.ontimeupdate = function () {
+        $('.progress-2').css('width', aud.currentTime / aud.duration * 100 + '%')
+      }
+    })
+  </script>
+  <script>
+    $(function () {
+      var aud = $('audio')[3];
+      $('.play-pause-3').on('click', function () {
+        if (aud.paused) {
+          aud.play();
+          $('.play-pause-3').removeClass('icon-play');
+          $('.play-pause-3').addClass('icon-stop');
+        }
+        else {
+          aud.pause();
+          $('.play-pause-3').removeClass('icon-stop');
+          $('.play-pause-3').addClass('icon-play');
+        }
+
+      })
+      aud.ontimeupdate = function () {
+        $('.progress-3').css('width', aud.currentTime / aud.duration * 100 + '%')
+      }
+    })
+  </script>
+
+  <script>
+    $(function () {
+      var aud = $('audio')[4];
+      $('.play-pause-4').on('click', function () {
+        if (aud.paused) {
+          aud.play();
+          $('.play-pause-4').removeClass('icon-play');
+          $('.play-pause-4').addClass('icon-stop');
+        }
+        else {
+          aud.pause();
+          $('.play-pause-4').removeClass('icon-stop');
+          $('.play-pause-4').addClass('icon-play');
+        }
+
+      })
+      aud.ontimeupdate = function () {
+        $('.progress-4').css('width', aud.currentTime / aud.duration * 100 + '%')
+      }
+    })
+  </script>
+
+  <script>
+    $(function () {
+      var aud = $('audio')[5];
+      $('.play-pause-5').on('click', function () {
+        if (aud.paused) {
+          aud.play();
+          $('.play-pause-5').removeClass('icon-play');
+          $('.play-pause-5').addClass('icon-stop');
+        }
+        else {
+          aud.pause();
+          $('.play-pause-5').removeClass('icon-stop');
+          $('.play-pause-5').addClass('icon-play');
+        }
+
+      })
+      aud.ontimeupdate = function () {
+        $('.progress-5').css('width', aud.currentTime / aud.duration * 100 + '%')
+      }
+    })
+  </script>
+
+  <script>
+    $(function () {
+      var aud = $('audio')[6];
+      $('.play-pause-6').on('click', function () {
+        if (aud.paused) {
+          aud.play();
+          $('.play-pause-6').removeClass('icon-play');
+          $('.play-pause-6').addClass('icon-stop');
+        }
+        else {
+          aud.pause();
+          $('.play-pause-6').removeClass('icon-stop');
+          $('.play-pause-6').addClass('icon-play');
+        }
+
+      })
+      aud.ontimeupdate = function () {
+        $('.progress-6').css('width', aud.currentTime / aud.duration * 100 + '%')
+      }
+    })
+  </script>
+
+  <script>
+    $(function () {
+      var aud = $('audio')[7];
+      $('.play-pause-7').on('click', function () {
+        if (aud.paused) {
+          aud.play();
+          $('.play-pause-7').removeClass('icon-play');
+          $('.play-pause-7').addClass('icon-stop');
+        }
+        else {
+          aud.pause();
+          $('.play-pause-7').removeClass('icon-stop');
+          $('.play-pause-7').addClass('icon-play');
+        }
+
+      })
+      aud.ontimeupdate = function () {
+        $('.progress-7').css('width', aud.currentTime / aud.duration * 100 + '%')
+      }
+    })
+  </script>
+
+  <script>
+    $(function () {
+      var aud = $('audio')[8];
+      $('.play-pause-8').on('click', function () {
+        if (aud.paused) {
+          aud.play();
+          $('.play-pause-8').removeClass('icon-play');
+          $('.play-pause-8').addClass('icon-stop');
+        }
+        else {
+          aud.pause();
+          $('.play-pause-8').removeClass('icon-stop');
+          $('.play-pause-8').addClass('icon-play');
+        }
+
+      })
+      aud.ontimeupdate = function () {
+        $('.progress-8').css('width', aud.currentTime / aud.duration * 100 + '%')
+      }
+    })
+  </script>
+
+  <script>
+    $(function () {
+      var aud = $('audio')[9];
+      $('.play-pause-9').on('click', function () {
+        if (aud.paused) {
+          aud.play();
+          $('.play-pause-9').removeClass('icon-play');
+          $('.play-pause-9').addClass('icon-stop');
+        }
+        else {
+          aud.pause();
+          $('.play-pause-9').removeClass('icon-stop');
+          $('.play-pause-9').addClass('icon-play');
+        }
+
+      })
+      aud.ontimeupdate = function () {
+        $('.progress-9').css('width', aud.currentTime / aud.duration * 100 + '%')
+      }
+    })
+  </script>
+
+  <script>
+    $(function () {
+      var aud = $('audio')[10];
+      $('.play-pause-10').on('click', function () {
+        if (aud.paused) {
+          aud.play();
+          $('.play-pause-10').removeClass('icon-play');
+          $('.play-pause-10').addClass('icon-stop');
+        }
+        else {
+          aud.pause();
+          $('.play-pause-10').removeClass('icon-stop');
+          $('.play-pause-10').addClass('icon-play');
+        }
+
+      })
+      aud.ontimeupdate = function () {
+        $('.progress-10').css('width', aud.currentTime / aud.duration * 100 + '%')
+      }
+    })
+  </script>
+
+  <script>
+    $(function () {
+      var aud = $('audio')[11];
+      $('.play-pause-11').on('click', function () {
+        if (aud.paused) {
+          aud.play();
+          $('.play-pause-11').removeClass('icon-play');
+          $('.play-pause-11').addClass('icon-stop');
+        }
+        else {
+          aud.pause();
+          $('.play-pause-11').removeClass('icon-stop');
+          $('.play-pause-11').addClass('icon-play');
+        }
+
+      })
+      aud.ontimeupdate = function () {
+        $('.progress-11').css('width', aud.currentTime / aud.duration * 100 + '%')
+      }
+    })
+  </script>
+
+  <title>Ratify | Music Player</title>
+</head>
+
+<body>
+
+  <div class="vertical-nav" id="sidebar">
+    <div class="py-4 px-3 mb-4 my-4 ml-2">
+      <div class="media d-flex align-items-center">
+        <img src="images/icons8-rat-silhouette-48.png" alt="..." width="65" class="mr-3 shadow-sm img-fluid">
+        <div class="media-body">
+          <h4 class="m-0">RATIFY</h4>
+          <p>Music for all.</p>
+        </div>
+      </div>
+    </div>
+    <form class="form-inline my-lg-0">
+      <input class="form-control container search-bar" type="search" placeholder="Search all music" aria-label="Search">
+      <img class="img-fluid search-icon" src="images/icons8-search-32.png">
+    </form>
+    <div class="container my-5 ml-5 text-left nav-text">
+      <p>Collection</p>
+      <p>Now Playing</p>
+      <hr color="#212529" width="60%" class="text-left ml-0 my-4">
+      <p><img src="images/icons8-plus-24.png" width="17px" height="17px"> &nbsp New Playlist</p>
+      <p><img src="images/icons8-lounge-music-playlist-32.png" width="17px" height="17px"> &nbsp Videos</p>
+    </div>
+  </div>
+
+
+
+  <div class="page-content p-5" id="content">
+    <!-- Toggle button -->
+    <button id="sidebarCollapse" type="button" class="btn rounded-pill shadow-sm px-4 mb-4"><img
+        src="images/icons8-menu-24.png"></button>
+
+    <div class="row">
+      <div class="col-sm-8">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <video class="video-fluid embed-responsive rounded" autoplay loop muted>
+                <source src="video/GLASS_BACKGROUND_CLUB.mov" type="video/mp4" />
+              </video>
+            </div>
+            <div class="carousel-item">
+              <video class="video-fluid embed-responsive rounded" autoplay loop muted>
+                <source src="video/FREEStockVideoDOWNLOADVictrolaRecordPlayer2PackHD.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="carousel-item">
+              <video class="video-fluid embed-responsive rounded" autoplay loop muted>
+                <source src="video/170216A_144_StreetPerformer2_1080p.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 hero-text">
+        <h1>Listen to unlimited ad free songs for free.</h1>
+        <h1 style="font-size: 60px;">Only on ratify.</h1>
+      </div>
+    </div>
+
+    <h5>All songs</h5>
+
+    <div class="row">
+
+      <div class="col-sm my-3 song-img"><img class="song-image img-fluid rounded" src="images/ishqtera.jpg">
+        <div class="middle">
+          <div class="text">
+            <audio src="music/Ishq Tera - Guru Randhawa.mp3"></audio>
+            <div class="player">
+              <div class="btns">
+                <div class="iconfont play-pause-0 icon-play"></div>
+              </div>
+              <div class="progress-0"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm my-3 song-img"><img class="song-image img-fluid rounded" src="images/dholna.jpg">
+        <div class="middle">
+          <div class="text">
+            <audio src="music/Dholna-B-Praak.mp3"></audio>
+            <div class="player">
+              <div class="btns">
+                <div class="iconfont play-pause-1 icon-play"></div>
+              </div>
+              <div class="progress-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm my-3 song-img"><img class="song-image img-fluid rounded" src="images/sitarey.jpg">
+        <div class="middle">
+          <div class="text">
+            <audio src="music/Sitarey - Jaz Dhami (DjPunjab.Com).mp3"></audio>
+            <div class="player">
+              <div class="btns">
+                <div class="iconfont play-pause-2 icon-play"></div>
+              </div>
+              <div class="progress-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm my-3 song-img"><img class="song-image img-fluid rounded" src="images/badguy.jfif"
+          width="400px">
+        <div class="middle">
+          <div class="text">
+            <audio src="music/Billie Eilish - bad guy.mp3"></audio>
+            <div class="player">
+              <div class="btns">
+                <div class="iconfont play-pause-3 icon-play"></div>
+              </div>
+              <div class="progress-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-sm my-3 song-img"><img class="song-image img-fluid rounded" src="images/brownrang.jpg"
+          height="400px">
+        <div class="middle">
+          <div class="text">
+            <audio src="music/03 Brown Rang - Yo Yo Honey Singh (PagalWorld.com)- 320Kbps.mp3"></audio>
+            <div class="player">
+              <div class="btns">
+                <div class="iconfont play-pause-4 icon-play"></div>
+              </div>
+              <div class="progress-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm my-3 song-img"><img class="song-image img-fluid rounded" src="images/cradles.jpg">
+        <div class="middle">
+          <div class="text">
+            <audio src="music/Sub Urban - Cradles [OFFICIAL MUSIC VIDEO] (320 kbps).mp3"></audio>
+            <div class="player">
+              <div class="btns">
+                <div class="iconfont play-pause-5 icon-play"></div>
+              </div>
+              <div class="progress-5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm my-3 song-img"><img class="song-image img-fluid rounded" src="images/bandook.jpg">
+        <div class="middle">
+          <div class="text">
+            <audio src="music/Bandook-chalegi-(pagalworld4u.wapkiz.com).mp3"></audio>
+            <div class="player">
+              <div class="btns">
+                <div class="iconfont play-pause-6 icon-play"></div>
+              </div>
+              <div class="progress-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm my-3 song-img"><img class="song-image img-fluid rounded" src="images/makhna.png">
+        <div class="middle">
+          <div class="text">
+            <audio src="music/Makhna - Drive.mp3"></audio>
+            <div class="player">
+              <div class="btns">
+                <div class="iconfont play-pause-7 icon-play"></div>
+              </div>
+              <div class="progress-7"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm my-3 song-img"><img class="song-image img-fluid rounded" src="images/khaab.jpg">
+        <div class="middle">
+          <div class="text">
+            <audio src="music/Khaab-Akhil.mp3"></audio>
+            <div class="player">
+              <div class="btns">
+                <div class="iconfont play-pause-8 icon-play"></div>
+              </div>
+              <div class="progress-8"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm my-3 song-img"><img class="song-image img-fluid rounded" src="images/sakhiyaan.jpg">
+        <div class="middle">
+          <div class="text">
+            <audio src="music/Sakhiyaan - Maninder Buttar.mp3"></audio>
+            <div class="player">
+              <div class="btns">
+                <div class="iconfont play-pause-9 icon-play"></div>
+              </div>
+              <div class="progress-9"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm my-3 song-img"><img class="song-image img-fluid rounded" src="images/blankspace.png">
+        <div class="middle">
+          <div class="text">
+            <audio src="music/Taylor Swift - Blank Space.mp3"></audio>
+            <div class="player">
+              <div class="btns">
+                <div class="iconfont play-pause-10 icon-play"></div>
+              </div>
+              <div class="progress-10"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm my-3 song-img"><img class="song-image img-fluid rounded" src="images/jaannisaar.jpg">
+        <div class="middle">
+          <div class="text">
+            <audio src="music/Jaan Nisaar - Kedarnath 320 Kbps.mp3"></audio>
+            <div class="player">
+              <div class="btns">
+                <div class="iconfont play-pause-11 icon-play"></div>
+              </div>
+              <div class="progress-11"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="text-center">
+    Designed by Harshita Singh .
+  </footer>
+
+
+
+
+
+
+</body>
+
+</html>
